@@ -158,12 +158,6 @@ vector<std::string> inFiles;
                         e_rec = eFinder->SelectHighestPT(e_candidates);
                 }
 
-
-		// Get momentum vector elements from MC electron
-                mc_p = edm4hep::utils::magnitude(e_mc[0].getMomentum());
-                mc_eta = edm4hep::utils::eta(e_mc[0].getMomentum());
-                mc_phi = edm4hep::utils::angleAzimuthal(e_mc[0].getMomentum());		
-		
 		
 		// Calculate kinematic variables using MC electron
 		TLorentzVector kprime;
