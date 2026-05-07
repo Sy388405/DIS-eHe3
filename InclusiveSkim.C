@@ -341,7 +341,7 @@ vector<std::string> inFiles;
 		for ( int i = 0; i < eFinder->hfs_dpz.size(); i++ )
 		{
 			h_hfs_dpz->Fill(eFinder->hfs_dpz[i]);
-			h_hfs_dpt_t->Fill(eFinder->hfs_theta[i], eFinder->hfs_dpz[i]);
+			h_hfs_dpz_t->Fill(eFinder->hfs_theta[i], eFinder->hfs_dpz[i]);
 		}
 
 		for ( int i = 0; i < eFinder->hfs_de.size(); i++ )
