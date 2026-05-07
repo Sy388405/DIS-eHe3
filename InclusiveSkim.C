@@ -101,7 +101,7 @@ vector<std::string> inFiles;
 	algorithm.push_back(Kinematics("MC", kGray)); // MC info
 		// setup output file and histograms
 		
-		TString outFileName = Form("eHe3_q2_1to1000_inclusive_skim_%.0fx%.0fGeV.root", Ee, Eh);
+		TString outFileName = Form("eHe3_q2_1to1000_%.0fx%.0fGeV.root", Ee, Eh);
 		CreateOutputTree(outFileName);
 	
 	DefineHistograms();		
